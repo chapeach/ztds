@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.secret_key = "1234"
 app.permanent_session_lifetime = timedelta(minutes=30)
 
-@app.route('/')
+@app.route('/5678')
 def home():
     return '111'
 
