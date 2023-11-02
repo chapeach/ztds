@@ -12,9 +12,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return '11'
+    return '1'
 
-#app.register_blueprint(login)
+app.register_blueprint(login)
 #app.register_blueprint(home)
 #app.register_blueprint(check_act)
 
