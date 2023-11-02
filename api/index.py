@@ -1,7 +1,7 @@
 from flask import Flask
 #from datetime import timedelta
 
-from login import *
+#from login import *
 #from home import *
 #from check_act import *
 
@@ -12,9 +12,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return '7'
+    return '8'
 
-app.register_blueprint(login)
+#app.register_blueprint(login)
 #app.register_blueprint(home)
 #app.register_blueprint(check_act)
 
