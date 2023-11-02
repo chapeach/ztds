@@ -1,7 +1,7 @@
 from flask import Flask
 #from datetime import timedelta
 
-#from login import *
+from login import *
 #from home import *
 #from check_act import *
 
