@@ -7,10 +7,14 @@ login = Blueprint('login', __name__)
 
 @login.route("/login")
 def page_login():
-    if "username" not in session:
-        return render_template("/login/login.html")
-    else:
-        return redirect("/")
+    return "login"
+
+#@login.route("/login")
+#def page_login():
+#    if "username" not in session:
+#        return render_template("/login/login.html")
+#    else:
+#        return redirect("/")
 
 '''
 @login.route("/fn_login", methods=["POST"])
