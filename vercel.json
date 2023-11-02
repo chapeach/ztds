@@ -1,8 +1,5 @@
 {
-  "functions": {
-    "api": {
-      "runtime": "python3.9",
-      "includeFiles": ["my_function.py"]
-    }
-  }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/index" }
+  ]
 }
