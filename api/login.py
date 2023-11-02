@@ -1,12 +1,12 @@
-from flask import Blueprint
+#from flask import Blueprint
 #render_template, redirect
 #request, session
 #import sqlite3
 #import time
 
-login = Blueprint('login', __name__)
+#login = Blueprint('login', __name__)
 
-@login.route("/login")
+@app.route("/login")
 def page_login():
     return "login"
 
