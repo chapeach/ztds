@@ -1,26 +1,6 @@
-/*
 {
   "rewrites": [{
     "source": "/(.*)",
     "destination": "/api/index"
   }]
-}
-
-{
-  "functions": {
-    "api": {
-      "runtime": "python3.9",
-      "includeFiles": ["my_function.py"]
-    }
-  }
-}
-*/
-
-{
-  "functions": {
-    "api": {
-      "handler": "app.app",
-      "runtime": "python3.9"
-    }
-  }
 }
