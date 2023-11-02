@@ -12,11 +12,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return '2'
+    return '3'
 
 app.register_blueprint(login)
 #app.register_blueprint(home)
 #app.register_blueprint(check_act)
 
-#if __name__ == "__main__":
+if __name__ == "__main__":
+    app.run()
 #    app.run(debug=True, host="0.0.0.0")
