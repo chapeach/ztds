@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, redirect, request, session
-import sqlite3
-import time
+#import sqlite3
+#import time
 
 login = Blueprint('login', __name__)
 
@@ -11,6 +11,7 @@ def page_login():
     else:
         return redirect("/")
 
+'''
 @login.route("/fn_login", methods=["POST"])
 def fn_login():
     try:
@@ -48,3 +49,4 @@ def fn_logout():
     session.clear()
     print("*"*50)
     return redirect("/login")
+'''
