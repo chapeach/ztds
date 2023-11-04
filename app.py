@@ -1,5 +1,11 @@
 from flask import Flask
-from my_blueprint import bp
+from flask_cors import CORS
+from my_blueprint import my_blueprint
 
 app = Flask(__name__)
-app.register_blueprint(bp, url_prefix="/my_blueprint")
+CORS(app)
+
+app.register_blueprint(my_blueprint)
+
+if __name__ == "__main__":
+    app.run()
