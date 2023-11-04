@@ -1,7 +1,8 @@
-from flask import Blueprint
+from flask import Blueprint, jsonify
 
-bp = Blueprint("my_blueprint", __name__)
+my_blueprint = Blueprint("my_blueprint", __name__)
 
-@bp.route("/")
-def index():
-    return "Hello from my Blueprint!"
+@my_blueprint.route("/api", methods=["GET"])
+def api_route():
+    data = {"message": "Hello from Blueprint API!"}
+    return jsonify(data)
